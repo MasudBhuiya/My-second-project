@@ -1,0 +1,211 @@
+body{
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+/* header section */
+
+
+.button-primary{
+    padding:8px 25px ;
+    border: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: aliceblue;
+    height: 44px; 
+    border-radius: 25px;
+    background-color:rgb(166, 59, 116);
+}
+/* header and navigation styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 50px ;
+}
+.nav-title{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul {
+  display: flex;
+    align-items:center;
+}
+.image{
+        padding:0 30px;
+        margin: 20px 50px;
+        justify-content: end;
+       padding: bottom right;
+    }
+    
+
+
+
+.banner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.banner-description{
+    width: 400px;
+}
+
+/* main styles */
+hr{
+    margin: 30px 100px;
+
+}
+.main{
+    gap: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.star{
+    color: gold;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+
+.point{
+    margin-left: 15px;
+    
+    color: rgb(31, 3, 3);
+}
+/* aside styles */
+.popular-title{
+    text-align: center;
+}
+.aside{
+    align-items: center;
+}
+.popular{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* section styles */
+
+.photo-last{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.para{
+    width: 400px;
+}
+
+/* footer styles */
+.footer{
+    margin-top: 100px;
+    padding: 50px 20px;
+    align-items: center;
+    color: #FFF8f3;
+    background-color:rgb(14, 3, 55);
+}
+.h2{
+    text-align: center;
+}
+.p{
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
+
+/* ----------------
+media queary 
+---------------*/
+
+
+/* Mobile-Device */
+
+@media only screen and (max-width:576px) {
+     .popular, .nav-title, .photo-last, .ul, .banner-info{
+        
+
+
+        
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main{
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    
+    
+       .banner-description{
+        width: 100%;
+       }
+   
+    
+    .banner{
+        flex-direction:column-reverse;
+        
+        
+    }
+   
+   
+}
+
+/* Tablet Device */
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .popular, .nav-title, .photo-last, .ul, .banner-info{
+        
+      
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image{
+        width: 100%;
+    }
+    .pg{
+        width: 100%;
+    }
+    .photo-last{
+        align-items: center;
+    }
+    .main{
+       
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        align-items: center;
+    }
+    ul{
+        width: 100%;
+    }
+    .aside{
+        grid-column-gap: 2px;
+        width: 100%;
+    }
+       .banner-description{
+        
+       }
+   
+    
+    .banner{
+        flex-direction:column-reverse;
+        
+        
+    }
+   .footer{
+    width: 100%;
+   }
+    
+}
